@@ -1,0 +1,565 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+
+.logo:hover{
+    transform: rotate(360deg);
+}
+.logo{
+    width: 70px;
+    height: 50px;
+    background-image: url('My Logo.png');
+    background-size: cover;
+    margin: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.nav-space{
+    width: 1100px;
+    height: 50px;
+}
+
+/* .nav-links a:hover{
+    color: white;
+} */
+
+.nav-links{
+    display: flex;
+    gap: 30px;
+    font-size: 1.2rem;
+    color: black;
+   
+    font-family: 'Impact', Consolas, 'Courier New';
+}
+
+/* interface */
+
+.inter-face{
+    height: 900px;
+    width: 1700px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.intro{
+    height: 850px;
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 60px
+    ;
+}
+
+.mk{
+    font-size: 9rem;
+
+    font-family: 'Impact', Consolas, 'Courier New';
+    color: black;
+
+}
+.title{
+    font-size: 2rem;
+    
+    font-family: 'Impact', Consolas, 'Courier New';
+}
+
+.mail:hover{
+    font-size: 2.5rem;
+}
+.mail{
+    font-size: 1.5rem;
+   
+    font-family: 'Impact', Consolas, 'Courier New';
+    background-color: #FFCC00;
+    text-decoration: none;
+    color: black;
+    border: 2px solid #FFCC00;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.photo{
+    height: 850px;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.image:hover{
+    transform: rotateY(180deg);
+}
+.image{
+    height: 800px;
+    width: 500px;
+    background-color: aqua;
+    background-image: url(Page\ 1.jpg);
+    background-size: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* about */
+
+.about{
+    height: 400px;
+    width: 100%;
+    background-color: #FFCC00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me{
+    height: 300px;
+    width: 1700px;
+    padding-top: 30px;
+    padding-left: 100px;
+}
+
+.h1{
+    font-size: 5rem;
+    
+    font-family: 'Impact', Consolas, 'Courier New';
+}
+
+.h2{
+    font-size: 2rem;
+    margin-top: 20px;
+    font-family: 'Impact', Consolas, 'Courier New';
+}
+
+.linkedin{
+    font-size: 1rem;
+    font-family: 'Impact', Consolas, 'Courier New';
+    background-color: #D9D9D9;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 2px solid #D9D9D9;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* My Skills */
+
+.skill{
+    height: 620px;
+    width: 100%;
+}
+
+.skill-heading{
+    height: 100px;
+    width: 100%;
+}
+
+.skill-heading p{
+    font-size: 4rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+
+.skillbody1{
+    height: 250px;
+    width: 100%px;
+    display: flex;
+    
+}
+
+.skillbox1{
+    height: 250px;
+    width: 960px;
+    
+}
+
+.sofde1{
+    font-size: 2rem;
+    color: #FFCC00;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 150px;
+    /* margin-top: 40px; */
+}
+
+.box1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.skillbox2{
+    height: 250px;
+    width: 950px;
+    
+}
+
+.sofde2{
+    font-size: 2rem;
+    color: #FFCC00;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 150px;
+    /* margin-top: 40px; */
+}
+
+.box2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.skillbody2{
+    height: 300px;
+    height: 100%;
+    display: flex;
+   
+}
+
+.skillbox3{
+    height: 250px;
+    width: 960px;
+    
+}
+
+.sofde3{
+    font-size: 2rem;
+    color: #FFCC00;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 150px;
+    /* margin-top: 40px; */
+}
+
+.box3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.skillbox4{
+    height: 250px;
+    width: 950px;
+   
+}
+
+.sofde4{
+    font-size: 2rem;
+    color: #FFCC00;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 150px;
+    /* margin-top: 40px; */
+}
+
+.box4{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+/* Work Experienced */
+
+.work{
+    height: 1100px;
+    width: 100%;
+    background-color: #9A8324;
+}
+
+.work-heading{
+    height: 70px;
+    width: 100%;
+}
+
+.work-heading p{
+    font-size: 4rem;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+
+.work-box1{
+    height: 300px;
+    width: 100%;
+}
+
+.work-sd{
+    font-size: 3rem;
+    color: #FFCC00;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+
+.work-sdt{
+    font-size: 1.5rem;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+.work-about{
+    width: 650px;
+    font-size: 1.3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 150px;
+    margin-top: 20px;
+    color: white;
+}
+
+/* .work-box1{
+    height: 300px;
+    width: 100%;
+}
+
+.work-sd{
+    font-size: 3rem;
+    color: #FFCC00;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+
+.work-sdt{
+    font-size: 1.5rem;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+.work-about{
+    width: 650px;
+    font-size: 1.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 150px;
+    margin-top: 20px;
+    color: white;
+}
+
+.work-box1{
+    height: 300px;
+    width: 100%;
+}
+
+.work-sd{
+    font-size: 3rem;
+    color: #FFCC00;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+
+.work-sdt{
+    font-size: 1.5rem;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+.work-about{
+    width: 650px;
+    font-size: 1.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 150px;
+    margin-top: 20px;
+    color: white;
+} */
+
+/* Education */
+
+.education{
+    height: 500px;
+    width: 100%;
+}
+
+.education-heading{
+    height: 80px;
+    width: 100%;
+}
+
+.education-heading p{
+    font-size: 4rem;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+
+.educ-box1{
+    height: 200px;
+    width: 100%;
+}
+
+.educ-sd{
+    font-size: 2.3rem;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 150px;
+    margin-top: 80px;
+}
+
+.educ-gp{
+    font-size: 2.3rem;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+.sd-place{
+    font-size: 1.6rem;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+.footer{
+    height: 400px;
+    width: 100%;
+    background-color: #9A8324;
+}
+
+.elment-space{
+    height: 10px;
+    width: 100%;
+}
+
+.elment{
+    height:160px;
+    width: 100%;
+    display: flex;
+    margin-left: 150px;
+    margin-top: 70px;
+}
+
+.elment{
+    font-size: 7rem;
+    margin-top: 40px;
+}
+
+.elment-line{
+    height: 200px;
+    width: 1000px;
+}
+
+.elment-line p{
+    font-size: 1.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 150px;
+}
+
+.media{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.media i{
+    font-size: 2rem;
+    color: black;
+}
+
+/* interactive helpers */
+.toast {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  bottom: 20px;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: all 220ms ease;
+  z-index: 9999;
+}
+.toast.visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+#backToTop{
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  background:#FFCC00;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 9998;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.modal-overlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+}
+.modal-content{
+  width: min(80vw, 600px);
+  height: min(80vh, 800px);
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  position: relative;
+}
+.modal-close{
+  position:absolute;
+  top:8px;
+  right:8px;
+  font-size:22px;
+  color: #fff;
+  cursor:pointer;
+  padding:4px 8px;
+}
+.nav-links a.active{
+  color:#FFCC00;
+  font-weight:700;
+}
+.mobile-menu-btn{
+  display:none;
+  background:transparent;
+  border: none;
+  font-size:1.6rem;
+  margin-right:8px;
+  cursor:pointer;
+}
+@media (max-width: 900px){
+  .nav-space{display:none;}
+  .nav-links{ display: none; }
+  .mobile-menu-btn{ display:block; color: black; }
+  .inter-face, .about-me { padding: 20px; width: 100%; box-sizing: border-box; }
+  .image{ width: 320px; height: 420px; }
+}
