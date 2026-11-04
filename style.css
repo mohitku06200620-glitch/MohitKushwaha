@@ -1,6 +1,15 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 /* navbar */
@@ -13,6 +22,8 @@
     display: flex;
     justify-content: center;
     position: fixed;
+    z-index: 1000;
+    padding: 0 16px;
 }
 
 .logo:hover{
@@ -28,8 +39,10 @@
 }
 
 .nav-space{
-    width: 1100px;
+    width: 100%;
+    max-width: 1100px;
     height: 50px;
+    flex: 1;
 }
 
 /* .nav-links a:hover{
@@ -49,15 +62,17 @@
 
 .inter-face{
     height: 900px;
-    width: 1700px;
+    width: min(100%, 1700px);
+    margin: 0 auto;
     align-items: center;
     display: flex;
     justify-content: space-around;
 }
 
 .intro{
-    height: 850px;
-    width: 1100px;
+    min-height: 850px;
+    width: 60%;
+    min-width: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,14 +81,14 @@
 }
 
 .mk{
-    font-size: 9rem;
+    font-size: clamp(3.5rem, 7vw, 9rem);
 
     font-family: 'Impact', Consolas, 'Courier New';
     color: black;
 
 }
 .title{
-    font-size: 2rem;
+    font-size: clamp(1.2rem, 1.8vw, 2rem);
     
     font-family: 'Impact', Consolas, 'Courier New';
 }
@@ -96,8 +111,9 @@
 }
 
 .photo{
-    height: 850px;
-    width: 900px;
+    min-height: 850px;
+    width: 40%;
+    min-width: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,8 +124,8 @@
     transform: rotateY(180deg);
 }
 .image{
-    height: 800px;
-    width: 500px;
+    height: min(800px, 58vw);
+    width: min(100%, 500px);
     background-color: aqua;
     background-image: url('Mohit Card-1.jpg');
     background-size: cover;
@@ -119,7 +135,8 @@
 /* about */
 
 .about{
-    height: 400px;
+    min-height: 400px;
+    height: auto;
     width: 100%;
     background-color: #FFCC00;
     display: flex;
@@ -128,20 +145,18 @@
 }
 
 .about-me{
-    height: 300px;
-    width: 1700px;
-    padding-top: 30px;
-    padding-left: 100px;
+    width: min(100%, 1700px);
+    padding: 40px clamp(24px, 6vw, 100px);
 }
 
 .h1{
-    font-size: 5rem;
+    font-size: clamp(2.5rem, 5vw, 5rem);
     
     font-family: 'Impact', Consolas, 'Courier New';
 }
 
 .h2{
-    font-size: 2rem;
+    font-size: clamp(1.1rem, 2vw, 2rem);
     margin-top: 20px;
     font-family: 'Impact', Consolas, 'Courier New';
 }
@@ -163,7 +178,8 @@
 /* My Skills */
 
 .skill{
-    height: 620px;
+    min-height: 620px;
+    height: auto;
     width: 100%;
 }
 
@@ -173,22 +189,21 @@
 }
 
 .skill-heading p{
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 4vw, 4rem);
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-left: 150px;
+    margin-left: clamp(24px, 8vw, 150px);
     margin-top: 40px;
 }
 
 .skillbody1{
-    height: 250px;
-    width: 100%px;
+    width: 100%;
     display: flex;
     
 }
 
 .skillbox1{
-    height: 250px;
-    width: 960px;
+    min-height: 250px;
+    width: 50%;
     
 }
 
@@ -196,20 +211,20 @@
     font-size: 2rem;
     color: #FFCC00;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-left: 150px;
+    margin-left: clamp(24px, 8vw, 150px);
     /* margin-top: 40px; */
 }
 
 .box1{
     font-size: 1.5rem;
     font-weight: bold;
-    margin-left: 150px;
+    margin-left: clamp(24px, 8vw, 150px);
     margin-top: 20px;
 }
 
 .skillbox2{
-    height: 250px;
-    width: 950px;
+    min-height: 250px;
+    width: 50%;
     
 }
 
@@ -217,27 +232,27 @@
     font-size: 2rem;
     color: #FFCC00;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-left: 150px;
+    margin-left: clamp(24px, 8vw, 150px);
     /* margin-top: 40px; */
 }
 
 .box2{
     font-size: 1.5rem;
     font-weight: bold;
-    margin-left: 150px;
+    margin-left: clamp(24px, 8vw, 150px);
     margin-top: 20px;
 }
 
 .skillbody2{
-    height: 300px;
-    height: 100%;
+    min-height: 300px;
+    height: auto;
     display: flex;
    
 }
 
 .skillbox3{
-    height: 250px;
-    width: 960px;
+    min-height: 250px;
+    width: 50%;
     
 }
 
@@ -245,20 +260,20 @@
     font-size: 2rem;
     color: #FFCC00;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-left: 150px;
+    margin-left: clamp(24px, 8vw, 150px);
     /* margin-top: 40px; */
 }
 
 .box3{
     font-size: 1.5rem;
     font-weight: bold;
-    margin-left: 150px;
+    margin-left: clamp(24px, 8vw, 150px);
     margin-top: 20px;
 }
 
 .skillbox4{
-    height: 250px;
-    width: 950px;
+    min-height: 250px;
+    width: 50%;
    
 }
 
@@ -266,21 +281,22 @@
     font-size: 2rem;
     color: #FFCC00;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-left: 150px;
+    margin-left: clamp(24px, 8vw, 150px);
     /* margin-top: 40px; */
 }
 
 .box4{
     font-size: 1.5rem;
     font-weight: bold;
-    margin-left: 150px;
+    margin-left: clamp(24px, 8vw, 150px);
     margin-top: 20px;
 }
 
 /* Work Experienced */
 
 .work{
-    height: 1100px;
+    min-height: 1100px;
+    height: auto;
     width: 100%;
     background-color: #9A8324;
 }
@@ -291,23 +307,25 @@
 }
 
 .work-heading p{
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 4vw, 4rem);
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-left: 150px;
+    margin-left: clamp(24px, 8vw, 150px);
     margin-top: 40px;
 }
 
 .work-box1{
-    height: 300px;
+    min-height: 300px;
+    height: auto;
+    padding-bottom: 32px;
     width: 100%;
 }
 
 .work-sd{
-    font-size: 3rem;
+    font-size: clamp(2rem, 3vw, 3rem);
     color: #FFCC00;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-left: 150px;
+    margin-left: clamp(24px, 8vw, 150px);
     margin-top: 40px;
 }
 
@@ -315,15 +333,15 @@
     font-size: 1.5rem;
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-left: 150px;
+    margin-left: clamp(24px, 8vw, 150px);
     margin-top: 30px;
 }
 
 .work-about{
-    width: 650px;
+    width: min(650px, calc(100% - 48px));
     font-size: 1.3rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-left: 150px;
+    margin-left: clamp(24px, 8vw, 150px);
     margin-top: 20px;
     color: white;
 }
@@ -391,7 +409,8 @@
 /* Education */
 
 .education{
-    height: 500px;
+    min-height: 500px;
+    height: auto;
     width: 100%;
 }
 
@@ -401,32 +420,34 @@
 }
 
 .education-heading p{
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 4vw, 4rem);
     color: black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
-    margin-left: 150px;
+    margin-left: clamp(24px, 8vw, 150px);
     margin-top: 40px;
 }
 
 .educ-box1{
-    height: 200px;
+    min-height: 170px;
+    height: auto;
+    padding-bottom: 24px;
     width: 100%;
 }
 
 .educ-sd{
-    font-size: 2.3rem;
+    font-size: clamp(1.6rem, 2.3vw, 2.3rem);
     color: black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-left: 150px;
+    margin-left: clamp(24px, 8vw, 150px);
     margin-top: 80px;
 }
 
 .educ-gp{
-    font-size: 2.3rem;
+    font-size: clamp(1.6rem, 2.3vw, 2.3rem);
     color: black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-left: 150px;
+    margin-left: clamp(24px, 8vw, 150px);
     margin-top: 30px;
 }
 
@@ -434,43 +455,43 @@
     font-size: 1.6rem;
     color: black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-left: 150px;
+    margin-left: clamp(24px, 8vw, 150px);
     margin-top: 30px;
 }
 
 .footer{
-    height: 400px;
+    min-height: 400px;
+    height: auto;
     width: 100%;
     background-color: #9A8324;
+    padding: 40px clamp(24px, 8vw, 150px);
 }
 
 .elment-space{
-    height: 10px;
-    width: 100%;
+    display: none;
 }
 
 .elment{
-    height:160px;
+    height: auto;
     width: 100%;
     display: flex;
-    margin-left: 150px;
-    margin-top: 70px;
+    gap: 24px;
+    margin: 0 0 24px;
 }
 
 .elment{
-    font-size: 7rem;
-    margin-top: 40px;
+    font-size: clamp(3rem, 7vw, 7rem);
 }
 
 .elment-line{
-    height: 200px;
-    width: 1000px;
+    height: auto;
+    width: min(100%, 1000px);
 }
 
 .elment-line p{
     font-size: 1.5rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-left: 150px;
+    margin-left: 0;
 }
 
 .media{
@@ -557,9 +578,183 @@
   cursor:pointer;
 }
 @media (max-width: 900px){
-  .nav-space{display:none;}
-  .nav-links{ display: none; }
-  .mobile-menu-btn{ display:block; color: black; }
-  .inter-face, .about-me { padding: 20px; width: 100%; box-sizing: border-box; }
-  .image{ width: 320px; height: 420px; }
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .nav-space,
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+        color: black;
+    }
+
+    .inter-face {
+        height: auto;
+        min-height: 100vh;
+        padding: 80px 24px 40px;
+        flex-direction: column;
+    }
+
+    .intro,
+    .photo {
+        width: 100%;
+        min-height: 0;
+        padding: 24px 0;
+    }
+
+    .intro {
+        justify-content: flex-start;
+    }
+
+    .image {
+        width: min(100%, 360px);
+        height: min(110vw, 480px);
+        min-height: 300px;
+    }
+
+    .about-me {
+        width: 100%;
+        padding: 32px 24px;
+    }
+
+    .skill,
+    .work,
+    .education {
+        min-height: 0;
+        height: auto;
+        padding-bottom: 32px;
+    }
+
+    .skill-heading,
+    .work-heading,
+    .education-heading {
+        height: auto;
+        padding: 32px 24px 20px;
+    }
+
+    .skill-heading p,
+    .work-heading p,
+    .education-heading p {
+        margin: 0;
+    }
+
+    .skillbody1,
+    .skillbody2 {
+        min-height: 0;
+        flex-direction: column;
+    }
+
+    .skillbox1,
+    .skillbox2,
+    .skillbox3,
+    .skillbox4 {
+        width: 100%;
+        min-height: 0;
+        padding: 12px 24px 24px;
+    }
+
+    .sofde1,
+    .sofde2,
+    .sofde3,
+    .sofde4,
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .work-sd,
+    .work-sdt,
+    .work-about,
+    .educ-sd,
+    .educ-gp,
+    .sd-place {
+        margin-left: 0;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+        font-size: 1.1rem;
+    }
+
+    .work-box1 {
+        min-height: 0;
+        padding: 20px 24px 28px;
+    }
+
+    .work-sd,
+    .work-sdt,
+    .work-about,
+    .educ-sd,
+    .educ-gp,
+    .sd-place {
+        width: 100%;
+    }
+
+    .educ-box1 {
+        min-height: 0;
+        padding: 20px 24px;
+    }
+
+    .educ-sd,
+    .educ-gp {
+        margin-top: 0;
+    }
+
+    .footer {
+        padding: 32px 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        height: 56px;
+    }
+
+    .logo {
+        width: 58px;
+        height: 42px;
+        margin: 6px 0;
+    }
+
+    .nav-links {
+        font-size: 1rem;
+    }
+
+    .inter-face {
+        padding: 72px 20px 32px;
+    }
+
+    .mk {
+        font-size: clamp(3rem, 15vw, 5rem);
+    }
+
+    .title {
+        font-size: 1.15rem;
+    }
+
+    .mail {
+        font-size: 1.2rem;
+    }
+
+    .image {
+        height: min(120vw, 420px);
+    }
+
+    .h2 {
+        font-size: 1.05rem;
+    }
+
+    .work-about,
+    .sd-place {
+        font-size: 1.1rem;
+    }
+
+    .media {
+        gap: 24px;
+    }
 }
