@@ -111,7 +111,7 @@
     height: 800px;
     width: 500px;
     background-color: aqua;
-    background-image: url(Page\ 1.jpg);
+    background-image: url('Mohit Card-1.jpg');
     background-size: cover;
     transition: transform 0.5s ease-in-out;
 }
